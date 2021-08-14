@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>CSS POsition</title>
+        <style>
+            #p1{
+                width: 800px;
+                height: 800px;
+                background: green;
+                overflow: hidden;
+                position: relative;
+                margin: auto;
+            }
+            .common{
+                width: 400px;
+                height: 400px;
+                position: absolute;
+            }
+            .c1{
+                background:pink ;
+                left: 0px;
+                top: 0px;
+                border-bottom-left-radius: 400px;
+                border-top-right-radius: 400px;
+            }
+            .c2{
+                background: orange;
+                bottom: 0px;
+                left: 0px;
+                border-top-left-radius: 400px;
+                border-bottom-right-radius: 400px;
+            }
+            .c3{
+                background: yellow;
+                top: 0px ;
+                right: 0px;
+                border-top-left-radius: 400px;
+                border-bottom-right-radius: 400px;
+                
+            }
+            .c4{
+                background: brown;
+                bottom: 0px;
+                right: 0px;
+                border-top-right-radius: 400px;
+                border-bottom-left-radius: 400px;
+            }
+            #p1:hover .c1{
+                background:lightcoral;
+            }
+            #p1:hover .c2{
+                background: lightcyan;
+            }
+            #p1:hover .c3{
+                background-color: lightgreen;
+            }
+            #p1:hover .c4{
+                background-color: lightskyblue;
+            }
+            #p2:hover #p1{
+                background-color:green;
+                
+            }
+            #p3{
+                font-size: 3em;
+                font-weight: bold;
+                font: italic;
+                color: red;
+                text-shadow:  5px 5px 5px black;
+                width: 700px;
+                height: 80px;
+                background: lightslategrey;
+                margin: auto;
+            }
+            #p2:hover #p3{
+                background: darkblue;
+            }
+
+        </style>
+    </head>
+    <body id="p2">
+        <div id="p3"> WELCOME TO CSS </div>
+        <div id="p1">
+            <div class=" common c1 pink"> </div>
+            <div class=" common c2 orange"> </div>
+            <div class=" common c3 yellow"> </div>
+            <div class=" common c4 brown"> </div>
+             
+        </div>
+    </body>
+</html>
